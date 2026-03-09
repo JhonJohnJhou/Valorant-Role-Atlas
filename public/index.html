@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Role Atlas</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="modo-inicial">
+    <h1 class="reveal-on-load delay-1">Valorant Role Atlas</h1>
+    <p class="reveal-on-load delay-2">Descubra a função de um agente ou liste os agentes de uma classe!</p>
+
+    <div class="barra-pesquisa reveal-on-load delay-3">
+      <input
+        type="text"
+        id="campoPesquisa"
+        placeholder="Ex: Sova, Jett, Iniciador..."
+      />
+
+      <button onclick="buscar()">Pesquisar</button>
+    </div>
+
+    <div class="busca-rapida reveal-on-load delay-4" aria-label="Sugestões de busca rápida por função">
+      <button class="pill-busca" type="button" onclick="usarSugestao('Duelistas')">Duelistas</button>
+      <button class="pill-busca" type="button" onclick="usarSugestao('Iniciadores')">Iniciadores</button>
+      <button class="pill-busca" type="button" onclick="usarSugestao('Controladores')">Controladores</button>
+      <button class="pill-busca" type="button" onclick="usarSugestao('Sentinelas')">Sentinelas</button>
+    </div>
+
+    <div id="resultado"></div>
+
+    <div id="agente-destaque">
+      <button id="btn-fechar-destaque" onclick="fecharDestaque()">&times;</button>
+
+      <div id="conteudo-destaque">
+        <div id="seletor-agentes"></div>
+
+        <div id="info-agente-destaque"></div>
+      </div>
+    </div>
+
+    <section id="apresentacao" class="reveal-on-load delay-4">
+      <div class="apresentacao-barra">
+        <p class="apresentacao-kicker">Projeto Para Portfólio • Desenvolvedor em formação</p>
+        <h2 class="apresentacao-titulo">Jhonata Rodrigues</h2>
+
+        <div class="apresentacao-links">
+          <a href="https://github.com/JhonJohnJhou" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/jhonata-rodrigues-a43027262/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/jhon.sns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <details class="sobre-mim">
+          <summary>Sobre mim</summary>
+          <p class="apresentacao-texto">
+            Meu nome é Jhonata, mas costumam me chamar de "Jhon" (e eu particularmente, até prefiro). Tenho 25 anos e curso Análise e Desenvolvimento de Sistemas na Universidade Veiga de Almeida (UVA). Busco uma oportunidade na área de tecnologia para contribuir com projetos reais, evoluir rápido e gerar valor com foco em produto e qualidade.
+          </p>
+          <p class="hobbies-label">Minhas atividades favoritas:</p>
+          <div class="apresentacao-infos">
+            <span class="chip-info">Leitura</span>
+            <span class="chip-info">Jogos</span>
+            <span class="chip-info">Esportes</span>
+            <span class="chip-info">Aprender coisas novas</span>
+            <span class="chip-info">Animes</span>
+            <span class="chip-info">Filmes</span>
+            <span class="chip-info">Músicas</span>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
