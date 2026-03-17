@@ -20,7 +20,7 @@ Uma aplicação Full Stack responsiva e interativa que consome dados de personag
 git clone https://github.com/JhonJohnJhou/Valorant-Role-Atlas.git
 \`\`\`
 
-2. Instale as dependências do Node:
+2. Instale as dependências do Node e Express:
 \`\`\`bash
 npm install
 \`\`\`
